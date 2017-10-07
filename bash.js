@@ -7,7 +7,7 @@ var exec = require('child_process').exec;
 // })
 console.log('Starting directory ' + process.cwd());
 try {
-  process.chdir('/home/olaf/Remote/Madhacks/');
+  process.chdir('/home/crypto/OpioidManagerSmartContract/');
   console.log('New directory: ' + process.cwd() + '/./go.sh');
 }
 catch (err) {
