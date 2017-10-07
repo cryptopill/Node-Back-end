@@ -1,3 +1,4 @@
 .gitignore
 node_modules
-bash.js
+#ignoring bash.js
+/bash.js
