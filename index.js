@@ -34,11 +34,11 @@ app.get('/', function(req,res,next){
   res.sendFile('/public/index.html', {root: __dirname })
 })
 //for running the script
-exec("echo hi", function(err, stdout, stderr) {
+/*exec("echo hi", function(err, stdout, stderr) {
   console.log(stdout);
-});
+});*/
 
 //listening at port 8080
-app.listen(process.env.port || 8080, function(){
+server.listen(process.env.port || 8080, function(){
   console.log('now listening at port 8080');
 })
