@@ -132,7 +132,7 @@ AppModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
             __WEBPACK_IMPORTED_MODULE_3__angular_forms__["c" /* FormsModule */],
             __WEBPACK_IMPORTED_MODULE_4__angular_platform_browser_animations__["a" /* BrowserAnimationsModule */],
-            __WEBPACK_IMPORTED_MODULE_5__angular_http__["b" /* HttpModule */],
+            __WEBPACK_IMPORTED_MODULE_5__angular_http__["c" /* HttpModule */],
             __WEBPACK_IMPORTED_MODULE_6__modules_dialogs_dialogs_module__["a" /* DialogsModule */],
             __WEBPACK_IMPORTED_MODULE_7__angular_material__["a" /* MatButtonModule */], __WEBPACK_IMPORTED_MODULE_7__angular_material__["f" /* MatIconModule */], __WEBPACK_IMPORTED_MODULE_7__angular_material__["g" /* MatInputModule */], __WEBPACK_IMPORTED_MODULE_7__angular_material__["h" /* MatListModule */], __WEBPACK_IMPORTED_MODULE_7__angular_material__["b" /* MatCardModule */],
             __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* RouterModule */].forRoot([
@@ -167,7 +167,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, ".home-container {\n    height: 100vh;\n    width: 100vw;\n    position: absolute;\n    z-index: 2\n}\n\n.background {\n    height: 100vh;\n    width: 100vw;\n    z-index: 0;\n    background-image: linear-gradient(-225deg, #E91E63 0%, #e53935 48%, #b71c1c 100%);\n    position: absolute;\n}\n\n#particles-js {\n    position: absolute;\n    z-index: 1;\n    height: 100vh;\n    width: 100vw;\n    padding: 0;\n    margin: 0;\n    overflow: hidden;\n}\n\n.router-card {\n    height: 250px;\n    width: 250px;\n    color: #eeeeee;\n    text-decoration: none;\n    background-color: rgba(238,238,238, 0.3);\n    border-radius: 0.3em;\n}\n\n.router-card mat-icon {\n    width: 120px;\n    height: 120px;\n}\n\n.router-card-icon {\n    font-size: 120px;\n    color: #eeeeee;\n}\n\n.router-card-text {\n    font-weight: 500;\n    font-size: 35px;\n    display: block;\n    color: #eeeeee;\n    text-decoration: none;\n}\n\n.home-title {\n    position: absolute;\n    z-index: 6;\n    font-weight: 300;\n    width: 100%;\n    top: 15%;\n    font-size: 6rem;\n}", ""]);
+exports.push([module.i, ".home-container {\n    height: 100vh;\n    width: 100vw;\n    position: absolute;\n    z-index: 2\n}\n\n.background {\n    height: 100vh;\n    width: 100vw;\n    z-index: 0;\n    background-image: linear-gradient(-225deg, #E91E63 0%, #e53935 48%, #b71c1c 100%);\n    position: absolute;\n}\n\n#particles-js {\n    position: absolute;\n    z-index: 1;\n    height: 100vh;\n    width: 100vw;\n    padding: 0;\n    margin: 0;\n    overflow: hidden;\n}\n\n.router-card {\n    height: 55vw;\n    width: 55vw;\n    max-height: 250px;\n    max-width: 250px;\n    color: #eeeeee;\n    text-decoration: none;\n    background-color: rgba(238,238,238, 0.3);\n    border-radius: 0.3em;\n}\n\n.router-card mat-icon {\n    width: 120px;\n    height: 120px;\n}\n\n.router-card-icon {\n    font-size: 120px;\n    color: #eeeeee;\n}\n\n.router-card-text {\n    font-weight: 500;\n    font-size: 35px;\n    display: block;\n    color: #eeeeee;\n    text-decoration: none;\n}\n\n.home-title {\n    position: absolute;\n    z-index: 6;\n    font-weight: 300;\n    width: 100%;\n    top: 10%;\n    font-size: 4em;\n}", ""]);
 
 // exports
 
@@ -180,7 +180,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/components/home/home.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"background\"></div>\n<div id=\"particles-js\"></div>\n\n<h1 class=\"animated fadeIn mb-4 white-text mb-4 text-center home-title\">CryptoPill</h1>\n\n<div class=\"container-fluid home-container\">\n    <div style=\"height: 100vh\">\n        <div class=\"flex-center flex-column\">\n\n            <div class=\"row\">\n                <div class=\"col-6\">\n                    <a routerLink=\"/physician\" class=\"waves-effect waves-light router-card text-center\">\n                        <div class=\"flex-center flex-column\">\n                            <mat-icon class=\"router-card-icon\">healing</mat-icon>\n                            <span class=\"router-card-text\">Physician</span>\n                        </div>\n                    </a>\n                </div>\n\n                <div class=\"col-6\">\n                    <a routerLink=\"/pharmacist\" class=\"waves-effect waves-light router-card text-center\">\n                        <div class=\"flex-center flex-column\">\n                            <mat-icon class=\"router-card-icon\">receipt</mat-icon>\n                            <span class=\"router-card-text\">Pharmacist</span>\n                        </div>\n                    </a>\n                </div>\n\n            </div>\n        </div>\n    </div>\n</div>"
+module.exports = "<div class=\"background\"></div>\n<div id=\"particles-js\"></div>\n\n<h1 class=\"animated fadeIn mb-4 white-text mb-4 text-center home-title\">CryptoPill</h1>\n\n<div class=\"container-fluid home-container\">\n    <div style=\"height: 100vh\">\n        <div class=\"flex-center flex-column\">\n\n            <div style=\"height: 4rem\"></div>\n\n            <div class=\"row justify-content-center\">\n                <div class=\"col-md-6 col-sm-12 text-center mt-3\">\n                    <a routerLink=\"/physician\" class=\"waves-effect waves-light router-card text-center\">\n                        <div class=\"flex-center flex-column\">\n                            <mat-icon class=\"router-card-icon\">healing</mat-icon>\n                            <span class=\"router-card-text\">Physician</span>\n                        </div>\n                    </a>\n                </div>\n\n                <div class=\"col-md-6 col-sm-12 text-center mt-3\">\n                    <a routerLink=\"/pharmacist\" class=\"waves-effect waves-light router-card text-center\">\n                        <div class=\"flex-center flex-column\">\n                            <mat-icon class=\"router-card-icon\">receipt</mat-icon>\n                            <span class=\"router-card-text\">Pharmacist</span>\n                        </div>\n                    </a>\n                </div>\n\n            </div>\n        </div>\n    </div>\n</div>"
 
 /***/ }),
 
@@ -303,7 +303,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/components/pharmacist/pharmacist.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<app-navbar></app-navbar>\n\n<div class=\"container\">\n  <div class=\"row mt-3 justify-content-center mb-4\">\n    <h1 class=\"font-weight-bold m-0\">Scan QR Code</h1>\n  </div>\n\n  <div style=\"height: 7rem\"></div>\n\n  <div class=\"row justify-content-center mt-3\">\n    <button mat-raised-button color=\"primary\" style=\"width: 100%; max-width: 250px;\" (click)=\"openScanner('m')\"><span class=\"text-uppercase\">Scan Prescription Barcode</span></button>\n  </div>\n\n  <div class=\"row justify-content-center mt-3 mb-4\">\n    <button mat-raised-button color=\"primary\" style=\"width: 100%; max-width: 250px;\" (click)=\"openScanner('p')\"><span class=\"text-uppercase\">Scan Patient Barcode</span></button>\n  </div>\n\n  <div style=\"height: 4rem\"></div>\n\n  <div *ngIf=\"medicineAddress\" class=\"row mt-4 justify-content-center\">\n    <div class=\"col-md-6 col-sm-12 text-center\">Prescription Address:</div>\n    <div class=\"col-md-6 col-sm-12 text-center font-weight-bold\">{{medicineAddress}}</div>\n  </div>\n\n  <div *ngIf=\"patientAddress\" class=\"row mt-2 justify-content-center\">\n    <div class=\"col-md-6 col-sm-12 text-center\">Patient Address:</div>\n    <div class=\"col-md-6 col-sm-12 text-center font-weight-bold\">{{patientAddress}}</div>\n  </div>\n\n</div>"
+module.exports = "<app-navbar></app-navbar>\n\n<div class=\"container\">\n  <div class=\"row mt-3 justify-content-center mb-4\">\n    <h1 class=\"font-weight-bold m-0\">Scan QR Code</h1>\n  </div>\n\n  <div style=\"height: 2rem\"></div>\n\n  <div class=\"row justify-content-center mt-3\">\n    <button mat-raised-button color=\"primary\" style=\"width: 100%; max-width: 250px;\" (click)=\"openScanner('m')\"><span class=\"text-uppercase\">Scan Prescription Barcode</span></button>\n  </div>\n\n  <div class=\"row justify-content-center mt-3 mb-4\">\n    <button mat-raised-button color=\"primary\" style=\"width: 100%; max-width: 250px;\" (click)=\"openScanner('p')\"><span class=\"text-uppercase\">Scan Patient Barcode</span></button>\n  </div>\n\n  <div style=\"height: 2rem\"></div>\n\n  <div *ngIf=\"medicineAddress\" class=\"row mt-4 justify-content-center\">\n    <div class=\"col-md-6 col-sm-12 text-center\">Prescription Address:</div>\n    <div class=\"col-md-6 col-sm-12 text-center font-weight-bold\">{{medicineAddress}}</div>\n  </div>\n\n  <div *ngIf=\"patientAddress\" class=\"row mt-2 justify-content-center\">\n    <div class=\"col-md-6 col-sm-12 text-center\">Patient Address:</div>\n    <div class=\"col-md-6 col-sm-12 text-center font-weight-bold\">{{patientAddress}}</div>\n  </div>\n\n  <div *ngIf=\"medicineAddress&&patientAddress\" class=\"row justify-content-center mt-4\">\n    <button mat-raised-button color=\"accent\" style=\"width: 100%; max-width: 250px;\" (click)=\"sendPrescription()\"><span class=\"text-uppercase\">Scan Patient Barcode</span></button>\n  </div>\n\n  <div *ngIf=\"successMedicine\" class=\"row justify-content-center mt-4\">\n    <mat-card class=\"bg-success flex-center flex-column\">\n      <div class=\"row white-text\">\n        <div class=\"col-2\">\n          <mat-icon>check_circle</mat-icon>\n        </div>\n\n        <div class=\"col-10 font-weight-bold\">\n          This prescription is valid!\n        </div>\n      </div>\n    </mat-card>\n  </div>\n\n  <div *ngIf=\"failureMedicine\" class=\"row justify-content-center mt-4\">\n    <mat-card class=\"bg-danger flex-center flex-column\">\n      <div class=\"row white-text\">\n        <div class=\"col-2\">\n          <mat-icon>cancel</mat-icon>\n        </div>\n\n        <div class=\"col-10 font-weight-bold\">\n          This prescription has already been distributed!\n        </div>\n      </div>\n    </mat-card>\n  </div>\n\n</div>"
 
 /***/ }),
 
@@ -314,6 +314,7 @@ module.exports = "<app-navbar></app-navbar>\n\n<div class=\"container\">\n  <div
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PharmacistComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_dialog_service__ = __webpack_require__("../../../../../src/app/services/dialog.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_data_service__ = __webpack_require__("../../../../../src/app/services/data.service.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -325,11 +326,15 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
+
 var PharmacistComponent = (function () {
-    function PharmacistComponent(_dialogService) {
+    function PharmacistComponent(_dialogService, _dataService) {
         this._dialogService = _dialogService;
+        this._dataService = _dataService;
     }
     PharmacistComponent.prototype.ngOnInit = function () {
+        this.successMedicine = false;
+        this.failureMedicine = false;
     };
     PharmacistComponent.prototype.openScanner = function (addressRef) {
         var _this = this;
@@ -344,6 +349,22 @@ var PharmacistComponent = (function () {
             }
         });
     };
+    PharmacistComponent.prototype.sendPrescription = function () {
+        var _this = this;
+        this._dataService.registerPrescription({
+            medAddress: this.medicineAddress,
+            patientAddress: this.patientAddress
+        }).subscribe(function (res) {
+            if (res) {
+                _this.successMedicine = true;
+                _this.failureMedicine = false;
+            }
+            else {
+                _this.successMedicine = false;
+                _this.failureMedicine = true;
+            }
+        });
+    };
     return PharmacistComponent;
 }());
 PharmacistComponent = __decorate([
@@ -352,10 +373,10 @@ PharmacistComponent = __decorate([
         template: __webpack_require__("../../../../../src/app/components/pharmacist/pharmacist.component.html"),
         styles: [__webpack_require__("../../../../../src/app/components/pharmacist/pharmacist.component.css")]
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_dialog_service__["a" /* DialogService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__services_dialog_service__["a" /* DialogService */]) === "function" && _a || Object])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_dialog_service__["a" /* DialogService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__services_dialog_service__["a" /* DialogService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__services_data_service__["a" /* DataService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__services_data_service__["a" /* DataService */]) === "function" && _b || Object])
 ], PharmacistComponent);
 
-var _a;
+var _a, _b;
 //# sourceMappingURL=pharmacist.component.js.map
 
 /***/ }),
@@ -368,7 +389,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, ".scroll-body {\n    overflow-y: auto;\n    height: 100%;\n}\n\n.top-row {\n    max-height: 50vh;\n}\n\n.medicine-card-container {\n    width: 100%;\n    overflow-x: auto;\n}\n\n.medicine-card {\n    width: 200px;\n    display: inline-block;\n    margin-left: 10px;\n    margin-right: 10px;\n    background-color: #EEEEEE;\n}\n\n.medicine-card span {\n    display: block;\n}\n\nmat-icon.large-icon {\n    width: 80px;\n    height: 80px;\n}\n\n.large-icon {\n    font-size: 80px;\n}", ""]);
+exports.push([module.i, ".scroll-body {\n    overflow-y: auto;\n    height: 100%;\n}\n\n.top-row {\n    max-height: 50vh;\n}\n\n.medicine-card-container {\n    width: 100%;\n    overflow-x: auto;\n}\n\n.medicine-card {\n    width: 200px;\n    display: inline-block;\n    margin-left: 10px;\n    margin-right: 10px;\n    background-color: #EEEEEE;\n}\n\n.medicine-card span {\n    display: block;\n}\n\n.large-icon {\n    transition: all 250ms ease-in-out;\n}\n\n.large-icon:hover {\n    color: #880E4F !important;\n}\n\nmat-icon.large-icon {\n    width: 80px;\n    height: 80px;\n}\n\n.large-icon {\n    font-size: 80px;\n}", ""]);
 
 // exports
 
@@ -381,7 +402,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/components/physician/physician.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<app-navbar></app-navbar>\n\n<div class=\"container mt-4 pb-4\">\n  <div class=\"row top-row\">\n    <div class=\"col-md-6\">\n      <div class=\"card h-100\">\n\n        <!--Header-->\n        <div class=\"header pt-3 bg-unique\">\n\n          <div class=\"row d-flex justify-content-center\">\n            <h3 class=\"white-text pt-3 pb-3 font-bold\">Patients</h3>\n          </div>\n\n        </div>\n        <!--Header-->\n\n        <div class=\"card-body p-0 mb-3 scroll-body mx-4 mt-4\">\n          <mat-nav-list *ngIf=\"patients\">\n            <mat-list-item (click)=\"selectPatient(patient)\" *ngFor=\"let patient of patients\">\n              <mat-icon mat-list-icon>person</mat-icon>\n              <span matLine><strong>{{patient.name}}</strong></span>\n              <span matLine>{{patient.num_prescriptions}} prescriptions</span>\n              <span matLine>Address: {{patient.address}}</span>\n            </mat-list-item>\n          </mat-nav-list>\n        </div>\n\n      </div>\n    </div>\n\n    <div class=\"col-md-6\">\n\n      <!--Form with header-->\n      <div class=\"card h-100\">\n\n        <!--Header-->\n        <div class=\"header pt-3 indigo\">\n\n          <div class=\"row d-flex justify-content-center\">\n            <h3 class=\"white-text pt-3 pb-3 font-bold\">Distribute Opioids</h3>\n          </div>\n\n        </div>\n        <!--Header-->\n        <div class=\"card-body mx-4 mt-4 flex-center flex-column\">\n\n          <div class=\"row\">\n            <div class=\"col\">\n              <!--Body-->\n              <mat-form-field class=\"w-100\">\n                <mat-icon matPrefix class=\"mr-2\">battery_std</mat-icon>\n                <input matInput placeholder=\"Number of capsules\" class=\"w-100\">\n              </mat-form-field>\n\n              <mat-form-field class=\"w-100\">\n                <mat-icon matPrefix class=\"mr-2\">battery_std</mat-icon>\n                <input matInput placeholder=\"mg/capsule\" class=\"w-100\">\n              </mat-form-field>\n\n              <mat-form-field class=\"w-100\">\n                <mat-icon matPrefix class=\"mr-2\">person</mat-icon>\n                <input matInput placeholder=\"Patient address\" class=\"w-100\">\n              </mat-form-field>\n\n              <!--Grid row-->\n              <div class=\"row d-flex align-items-center mb-4\">\n\n                <!--Grid column-->\n                <div class=\"col text-center\">\n                  <div class=\"text-center mt-3\">\n                    <button type=\"button\" mat-raised-button color=\"primary\">Distribute</button>\n                  </div>\n                </div>\n\n              </div>\n              <!--Grid row-->\n            </div>\n          </div>\n\n        </div>\n\n      </div>\n      <!--/Form with header-->\n\n    </div>\n  </div>\n\n  <div *ngIf=\"selectedPatient\" class=\"row mt-4\">\n    <mat-card class=\"w-100\">\n      <mat-card-title class=\"text-center\">Patient Medication</mat-card-title>\n\n      <mat-card-content class=\"medicine-card-container\">\n        <div style=\"width: auto; white-space: nowrap\" class=\"p-3\">\n          <mat-card *ngFor=\"let medicine of medicines\" (click)=\"selectMedicine(medicine)\" class=\"medicine-card waves-effect waves-light\">\n            <div class=\"row justify-content-center\">\n              <i class=\"fa fa-flask large-icon grey-text\"></i>\n            </div>\n\n            <div class=\"row justify-content-center\">\n              <span class=\"font-weight-bold text-uppercase p-2\">{{medicine.name}}</span>\n            </div>\n\n            <div class=\"row\">\n              <div class=\"col-6 p-0 text-left\">\n                <span>Strength:</span>\n              </div>\n              <div class=\"col-6 p-0 text-right\">\n                <span class=\"font-weight-bold\">{{medicine.density}} mg</span>\n              </div>\n            </div>\n\n            <div class=\"row\">\n              <div class=\"col-6 p-0 text-left\">\n                <span>No:</span>\n              </div>\n              <div class=\"col-6 p-0 text-right\">\n                <span class=\"font-weight-bold\">{{medicine.capsules}}</span>\n              </div>\n            </div>\n\n            <div class=\"row\">\n              <div class=\"col-6 p-0 text-left\">\n                <span>DOI:</span>\n              </div>\n              <div class=\"col-6 p-0 text-right\">\n                <span class=\"font-weight-bold\">{{medicine.doi}}</span>\n              </div>\n            </div>\n          </mat-card>\n        </div>\n      </mat-card-content>\n    </mat-card>\n  </div>\n</div>"
+module.exports = "<app-navbar></app-navbar>\n\n<div class=\"container mt-4 pb-4\">\n  <div class=\"row top-row\">\n    <div class=\"col-md-6\">\n      <div class=\"card h-100\">\n\n        <!--Header-->\n        <div class=\"header pt-3 bg-unique\">\n\n          <div class=\"row d-flex justify-content-center\">\n            <h3 class=\"white-text pt-3 pb-3 font-bold\">Patients</h3>\n          </div>\n\n        </div>\n        <!--Header-->\n\n        <div class=\"card-body p-0 mb-3 scroll-body mx-4 mt-4\">\n          <mat-nav-list *ngIf=\"patients\">\n            <mat-list-item (click)=\"selectPatient(patient)\" *ngFor=\"let patient of patients\">\n              <mat-icon mat-list-icon>person</mat-icon>\n              <span matLine><strong>{{patient.name}}</strong></span>\n              <span matLine>{{patient.num_prescriptions}} prescriptions</span>\n              <span matLine>Address: {{patient.address}}</span>\n            </mat-list-item>\n          </mat-nav-list>\n        </div>\n\n      </div>\n    </div>\n\n    <div class=\"col-md-6\">\n\n      <!--Form with header-->\n      <div class=\"card h-100\">\n\n        <!--Header-->\n        <div class=\"header pt-3 indigo\">\n\n          <div class=\"row d-flex justify-content-center\">\n            <h3 class=\"white-text pt-3 pb-3 font-bold\">Distribute Opioids</h3>\n          </div>\n\n        </div>\n        <!--Header-->\n        <div class=\"card-body mx-4 mt-4 flex-center flex-column\">\n\n          <div class=\"row\">\n            <div class=\"col\">\n              <!--Body-->\n              <mat-form-field class=\"w-100\">\n                <mat-icon matPrefix class=\"mr-2\">info_outline</mat-icon>\n                <input matInput placeholder=\"Name of medicine\" [(ngModel)]=\"newMedicine.name\" class=\"w-100\">\n              </mat-form-field>\n\n              <mat-form-field class=\"w-100\">\n                <mat-icon matPrefix class=\"mr-2\">reorder</mat-icon>\n                <input matInput placeholder=\"Number of capsules\" [(ngModel)]=\"newMedicine.capsules\" class=\"w-100\">\n              </mat-form-field>\n\n              <mat-form-field class=\"w-100\">\n                <mat-icon matPrefix class=\"mr-2\">change_history</mat-icon>\n                <input matInput placeholder=\"mg/capsule\" [(ngModel)]=\"newMedicine.density\" class=\"w-100\">\n              </mat-form-field>\n\n              <mat-form-field class=\"w-100\">\n                <mat-icon matPrefix class=\"mr-2\">person_outline</mat-icon>\n                <input matInput placeholder=\"Patient address\" [(ngModel)]=\"newMedicine.patientAddress\" class=\"w-100\">\n              </mat-form-field>\n\n              <!--Grid row-->\n              <div class=\"row d-flex align-items-center mb-4\">\n\n                <!--Grid column-->\n                <div class=\"col text-center\">\n                  <div class=\"text-center mt-3\">\n                    <button type=\"button\" mat-raised-button color=\"primary\" (click)=\"sendMedicine()\">Distribute</button>\n                  </div>\n                </div>\n\n              </div>\n              <!--Grid row-->\n            </div>\n          </div>\n\n        </div>\n\n      </div>\n      <!--/Form with header-->\n\n    </div>\n  </div>\n\n  <div *ngIf=\"selectedPatient\" class=\"row mt-4\">\n    <mat-card class=\"w-100\">\n      <mat-card-title class=\"text-center\">Patient Medication</mat-card-title>\n\n      <mat-card-content class=\"medicine-card-container\">\n        <div style=\"width: auto; white-space: nowrap\" class=\"p-3\">\n          <mat-card *ngFor=\"let medicine of medicines\" (click)=\"selectMedicine(medicine)\" class=\"medicine-card waves-effect waves-light\">\n            <div class=\"row justify-content-center\">\n              <i class=\"fa fa-flask large-icon grey-text\"></i>\n            </div>\n\n            <div class=\"row justify-content-center\">\n              <span class=\"font-weight-bold text-uppercase p-2\">{{medicine.name}}</span>\n            </div>\n\n            <div class=\"row\">\n              <div class=\"col-6 p-0 text-left\">\n                <span>Strength:</span>\n              </div>\n              <div class=\"col-6 p-0 text-right\">\n                <span class=\"font-weight-bold\">{{medicine.density}} mg</span>\n              </div>\n            </div>\n\n            <div class=\"row\">\n              <div class=\"col-6 p-0 text-left\">\n                <span>No:</span>\n              </div>\n              <div class=\"col-6 p-0 text-right\">\n                <span class=\"font-weight-bold\">{{medicine.capsules}}</span>\n              </div>\n            </div>\n\n            <div class=\"row\">\n              <div class=\"col-6 p-0 text-left\">\n                <span>DOI:</span>\n              </div>\n              <div class=\"col-6 p-0 text-right\">\n                <span class=\"font-weight-bold\">{{medicine.doi}}</span>\n              </div>\n            </div>\n          </mat-card>\n        </div>\n      </mat-card-content>\n    </mat-card>\n  </div>\n</div>"
 
 /***/ }),
 
@@ -391,8 +412,9 @@ module.exports = "<app-navbar></app-navbar>\n\n<div class=\"container mt-4 pb-4\
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PhysicianComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_data_service__ = __webpack_require__("../../../../../src/app/services/data.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_dialog_service__ = __webpack_require__("../../../../../src/app/services/dialog.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__models_medicine__ = __webpack_require__("../../../../../src/app/models/medicine.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_data_service__ = __webpack_require__("../../../../../src/app/services/data.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_dialog_service__ = __webpack_require__("../../../../../src/app/services/dialog.service.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -405,18 +427,31 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
 var PhysicianComponent = (function () {
     function PhysicianComponent(_dataService, _dialogService) {
         this._dataService = _dataService;
         this._dialogService = _dialogService;
+        this.newMedicine = new __WEBPACK_IMPORTED_MODULE_1__models_medicine__["a" /* Medicine */]();
     }
     PhysicianComponent.prototype.ngOnInit = function () {
         var _this = this;
         this._dataService.getUsers()
             .subscribe(function (patients) { return _this.patients = patients; });
         this.connection = this._dataService.getUpdate()
-            .subscribe(function (meds) {
-            console.log(meds);
+            .subscribe(function (data) {
+            _this._dataService.getUsers()
+                .subscribe(function (patients) {
+                if (_this.patients) {
+                    _this.patients.forEach(function (patient) {
+                        if (_this.selectedPatient && patient.address === _this.selectedPatient.address) {
+                            _this.selectedPatient = patient;
+                            _this.medicines = patient.medicines;
+                        }
+                    });
+                }
+                _this.patients = patients;
+            });
         });
     };
     PhysicianComponent.prototype.ngOnDestroy = function () {
@@ -433,6 +468,32 @@ var PhysicianComponent = (function () {
             .showQRDialog(medicine.medAddress, medicine.distributed)
             .subscribe(function (res) { return console.log(res); });
     };
+    PhysicianComponent.prototype.sendMedicine = function () {
+        var _this = this;
+        if (!(this.newMedicine.capsules && this.newMedicine.name
+            && this.newMedicine.patientAddress && this.newMedicine.density))
+            return;
+        var today = new Date();
+        var dd = today.getDate();
+        var mm = today.getMonth() + 1; //January is 0!
+        var yyyy = today.getFullYear();
+        if (dd < 10) {
+            dd = '0' + dd;
+        }
+        if (mm < 10) {
+            mm = '0' + mm;
+        }
+        today = dd + '/' + mm + '/' + yyyy;
+        this.newMedicine.doi = today;
+        this.newMedicine.distributed = false;
+        this.newMedicine.medAddress = Date.now().toString();
+        console.log(this.newMedicine);
+        this._dataService.sendNewMedicine(this.newMedicine)
+            .subscribe(function (res) {
+            _this.newMedicine = new __WEBPACK_IMPORTED_MODULE_1__models_medicine__["a" /* Medicine */]();
+            console.log(res);
+        });
+    };
     return PhysicianComponent;
 }());
 PhysicianComponent = __decorate([
@@ -441,7 +502,7 @@ PhysicianComponent = __decorate([
         template: __webpack_require__("../../../../../src/app/components/physician/physician.component.html"),
         styles: [__webpack_require__("../../../../../src/app/components/physician/physician.component.css")]
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_data_service__["a" /* DataService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__services_data_service__["a" /* DataService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__services_dialog_service__["a" /* DialogService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__services_dialog_service__["a" /* DialogService */]) === "function" && _b || Object])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__services_data_service__["a" /* DataService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__services_data_service__["a" /* DataService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_3__services_dialog_service__["a" /* DialogService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__services_dialog_service__["a" /* DialogService */]) === "function" && _b || Object])
 ], PhysicianComponent);
 
 var _a, _b;
@@ -582,6 +643,21 @@ var _a;
 
 /***/ }),
 
+/***/ "../../../../../src/app/models/medicine.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Medicine; });
+var Medicine = (function () {
+    function Medicine() {
+    }
+    return Medicine;
+}());
+
+//# sourceMappingURL=medicine.js.map
+
+/***/ }),
+
 /***/ "../../../../../src/app/modules/dialogs/dialogs.module.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -682,6 +758,18 @@ var DataService = (function () {
         return this._http.get(this.url + '/api/allusers')
             .map(function (res) { return res.json(); });
     };
+    DataService.prototype.sendNewMedicine = function (medicineData) {
+        var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Headers */]({ 'Content-Type': 'application/json' });
+        var options = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["d" /* RequestOptions */]({ headers: headers });
+        var body = JSON.stringify(medicineData);
+        return this._http.post(this.url + '/api/updatePrescription', body, options).map(function (res) { return res; });
+    };
+    DataService.prototype.registerPrescription = function (addresses) {
+        var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Headers */]({ 'Content-Type': 'application/json' });
+        var options = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["d" /* RequestOptions */]({ headers: headers });
+        var body = JSON.stringify(addresses);
+        return this._http.post(this.url + '/api/registerPrescription', body, options).map(function (res) { return res.json(); });
+    };
     DataService.prototype.getUpdate = function () {
         var _this = this;
         var observable = new __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__["Observable"](function (observer) {
@@ -699,7 +787,7 @@ var DataService = (function () {
 }());
 DataService = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Http */]) === "function" && _a || Object])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Http */]) === "function" && _a || Object])
 ], DataService);
 
 var _a;

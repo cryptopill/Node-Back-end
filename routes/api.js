@@ -177,9 +177,12 @@ router.post('/updatePrescription', urlencodedParser, function(req,res,next){
 //post request for registering prescription
 router.post('/registerPrescription', urlencodedParser, function(req,res,next){
   console.log(req.body);
+<<<<<<< HEAD
+=======
 
   //check if medAddress already exists for patientAddress
   socket2.emit('registerPre', req.body);
+>>>>>>> bf178c66e9e7379af00459406ad1bb879f01062e
   res.send(JSON.stringify({result : true}));
 })
 
