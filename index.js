@@ -8,6 +8,19 @@ var cors =  require('cors');
 //set up express app
 const app = express();
 
+var server = require('http').Server(app);
+var io = require('socket.io')(server);
+
+io.on('updatemeds', function(socket){
+  console.log('io waiting');
+  socket.emit('replymeds', 'hello');
+})
+
+/*setInterval(function(){
+
+}, 5000);*/
+
+
 app.use(cors());
 
 // app.use('/models', require('./models'))
