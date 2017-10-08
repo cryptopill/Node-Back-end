@@ -60,14 +60,22 @@ var Patients = [
     num_prescriptions: 5,
     medicines: [{
       name: "Opioids",
+<<<<<<< HEAD
       patientAddress: getRandomAddress(),
       medAddress: getRandomAddress(),
       doi: "10.8/2017",
       capsules: 10,
+=======
+      patientAddress: "0x243294715",
+      medAddress: "0x34b940321",
+      doi: "9/5/2017",
+      capsules: 8,
+>>>>>>> 1095a462e2845ae6dca9bc2da01941823583ef1d
       density: 5,
       distributed: true
     },
     {
+<<<<<<< HEAD
       name: "Opioids",
       patientAddress: getRandomAddress(),
       medAddress: getRandomAddress(),
@@ -82,14 +90,31 @@ var Patients = [
       doi: "10.8/2017",
       capsules: 10,
       density: 5,
+=======
+      name: "Theophylline",
+      patientAddress: "0x243294715",
+      medAddress: "0x34b940321",
+      doi: "6/9/2017",
+      capsules: 5,
+      density: 4,
+      distributed: false
+    },{
+      name: "Dilitiazem",
+      patientAddress: "0x243294715",
+      medAddress: "0x34b940321",
+      doi: "15/8/2017",
+      capsules: 3,
+      density: 6,
+>>>>>>> 1095a462e2845ae6dca9bc2da01941823583ef1d
       distributed: true
     }]
   },
   {
     address: getRandomAddress(),
     name: "Spider Man",
-    num_prescriptions: 5,
+    num_prescriptions: 4,
     medicines: [{
+<<<<<<< HEAD
       name: "Opioids",
       patientAddress: getRandomAddress(),
       medAddress: getRandomAddress(),
@@ -104,43 +129,87 @@ var Patients = [
       medAddress: getRandomAddress(),
       doi: "10.8/2017",
       capsules: 10,
+=======
+      name: "Lithium",
+      patientAddress: "0x243294715",
+      medAddress: "0x34b940321",
+      doi: "10/8/2017",
+      capsules: 14,
+      density: 2,
+      distributed: true
+    },
+    {
+      name: "Mesalazine",
+      patientAddress: "0x243294715",
+      medAddress: "0x34b940321",
+      doi: "20/8/2017",
+      capsules: 7,
+>>>>>>> 1095a462e2845ae6dca9bc2da01941823583ef1d
       density: 5,
       distributed: true
     },{
       name: "Opioids",
+<<<<<<< HEAD
       patientAddress: getRandomAddress(),
       medAddress: getRandomAddress(),
       doi: "10.8/2017",
       capsules: 10,
       density: 5,
+=======
+      patientAddress: "0x243294715",
+      medAddress: "0x34b940321",
+      doi: "12/8/2017",
+      capsules: 9,
+      density: 7,
+>>>>>>> 1095a462e2845ae6dca9bc2da01941823583ef1d
       distributed: true
     }]
   },{
     address: getRandomAddress(),
     name: "Super Man",
-    num_prescriptions: 5,
+    num_prescriptions: 3,
     medicines: [{
+<<<<<<< HEAD
       name: "Opioids",
       patientAddress: getRandomAddress(),
       medAddress: getRandomAddress(),
       doi: "10.8/2017",
+=======
+      name: "Nifedipine",
+      patientAddress: "0x243294715",
+      medAddress: "0x34b940321",
+      doi: "10/8/2017",
+>>>>>>> 1095a462e2845ae6dca9bc2da01941823583ef1d
       capsules: 10,
       density: 5,
       distributed: true
     },
     {
+<<<<<<< HEAD
       name: "Opioids",
       patientAddress: getRandomAddress(),
       medAddress: getRandomAddress(),
       doi: "10.8/2017",
+=======
+      name: "Lithium",
+      patientAddress: "0x243294715",
+      medAddress: "0x34b940321",
+      doi: "10/8/2017",
+>>>>>>> 1095a462e2845ae6dca9bc2da01941823583ef1d
       capsules: 10,
       density: 5,
       distributed: true
     },{
       name: "Opioids",
+<<<<<<< HEAD
       patientAddress: getRandomAddress(),
       medAddress: getRandomAddress(),
       doi: "10.8/2017",
+=======
+      patientAddress: "0x243294715",
+      medAddress: "0x34b940321",
+      doi: "10/8/2017",
+>>>>>>> 1095a462e2845ae6dca9bc2da01941823583ef1d
       capsules: 10,
       density: 5,
       distributed: true
@@ -160,9 +229,15 @@ var LocalPatient = {
 //temp Schema for prescription
 var Prescription = {
   name: "Opioids",
+<<<<<<< HEAD
   patientAddress: getRandomAddress(),
   medAddress: getRandomAddress(),
   doi: "10.8/2017",
+=======
+  patientAddress: "0x243294715",
+  medAddress: "0x243294715",
+  doi: "10/8/2017",
+>>>>>>> 1095a462e2845ae6dca9bc2da01941823583ef1d
   capsules: 10,
   density: 5,
   distributed: true
