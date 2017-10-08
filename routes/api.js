@@ -7,6 +7,10 @@ const io = require('socket.io-client');
 var socket = io('http://localhost:8080');
 
 
+socket.on('updatemeds', function(data){
+  console.log(data)
+})
+
 //const io = require('socket.io')(app);
 var Patient =  require('../models/Patient.js')
 var Medicine = require('../models/Medicine.js')
@@ -160,7 +164,6 @@ router.get('/getPrescription', function(req,res,next){
 
 //post request for pills
 router.post('/updatePrescription', function(req,res,next){
-  socket.emit('updatemeds');
   res.send('success');
 })
 

@@ -13,11 +13,6 @@ var io = require('socket.io')(server);
 
 
 
-/*setInterval(function(){
-
-}, 5000);*/
-
-
 app.use(cors());
 
 // app.use('/models', require('./models'))
@@ -32,9 +27,15 @@ app.get('/', (req, res) => {
 });
 
 
-io.on('updatemeds', function(socket){
+io.on('connection', function(socket){
   console.log('user connected');
-  socket.emit('replymeds', 'hello');
+  // socket.on('updatemeds', function(data){
+  //   console.log(data);
+  // })
+  setInterval(function(){
+    socket.emit('updatemeds', 'hello');
+  }, 5000)
+
 })
 //for running the script
 /*exec("echo hi", function(err, stdout, stderr) {
