@@ -4,6 +4,20 @@ var bodyParser =  require('body-parser');
 var Patient =  require('../models/Patient.js')
 var Medicine = require('../models/Medicine.js')
 
+
+
+var singleAddress = []
+//function to make sure an address cannot be used twice
+/*function preventDuplicate(var address){
+  for(i = 0 ; i < singleAddress.length ; i++){
+    if(singleAddress[i] === address){
+      return false;
+    }
+  }
+  return true;
+}*/
+
+
 //array of Patients
 var Patients = []
 // var Patients = [
@@ -110,7 +124,7 @@ var LocalPatient = {
   medicines: []
 }
 
-//temp  prescription
+//temp Schema for prescription
 var Prescription = {
   name: "Weed",
   patientAddress: "0x243294715",
