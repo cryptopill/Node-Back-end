@@ -1,14 +1,17 @@
 const express = require('express');
 const router = express.Router();
 var bodyParser =  require('body-parser');
+
 //const io = require('socket.io-client');
 const io2 = require('socket.io-client');
 
 //var socket = io('http://localhost:8080');
+
 // const io = require('socket.io-client');
 //const io2 = require('socket.io-client');
 
 // var socket = io('http://localhost:8080');
+
 var socket2 = io2('http://0.0.0.0:8000');
 // socket.emit(s)
 
@@ -50,27 +53,27 @@ var Patients = [
     name: "Space Man",
     num_prescriptions: 5,
     medicines: [{
-      name: "Weed",
+      name: "Opioids",
       patientAddress: "0x243294715",
       medAddress: "0x34b940321",
-      doi: "1/1/1111",
+      doi: "10.8/2017",
       capsules: 10,
       density: 5,
       distributed: true
     },
     {
-      name: "Weed",
+      name: "Opioids",
       patientAddress: "0x243294715",
       medAddress: "0x34b940321",
-      doi: "1/1/1111",
+      doi: "10.8/2017",
       capsules: 10,
       density: 5,
       distributed: true
     },{
-      name: "Weed",
+      name: "Opioids",
       patientAddress: "0x243294715",
       medAddress: "0x34b940321",
-      doi: "1/1/1111",
+      doi: "10.8/2017",
       capsules: 10,
       density: 5,
       distributed: true
@@ -81,27 +84,27 @@ var Patients = [
     name: "Spider Man",
     num_prescriptions: 5,
     medicines: [{
-      name: "Weed",
+      name: "Opioids",
       patientAddress: "0x243294715",
       medAddress: "0x34b940321",
-      doi: "1/1/1111",
+      doi: "10.8/2017",
       capsules: 10,
       density: 5,
       distributed: true
     },
     {
-      name: "Weed",
+      name: "Opioids",
       patientAddress: "0x243294715",
       medAddress: "0x34b940321",
-      doi: "1/1/1111",
+      doi: "10.8/2017",
       capsules: 10,
       density: 5,
       distributed: true
     },{
-      name: "Weed",
+      name: "Opioids",
       patientAddress: "0x243294715",
       medAddress: "0x34b940321",
-      doi: "1/1/1111",
+      doi: "10.8/2017",
       capsules: 10,
       density: 5,
       distributed: true
@@ -111,27 +114,27 @@ var Patients = [
     name: "Super Man",
     num_prescriptions: 5,
     medicines: [{
-      name: "Weed",
+      name: "Opioids",
       patientAddress: "0x243294715",
       medAddress: "0x34b940321",
-      doi: "1/1/1111",
+      doi: "10.8/2017",
       capsules: 10,
       density: 5,
       distributed: true
     },
     {
-      name: "Weed",
+      name: "Opioids",
       patientAddress: "0x243294715",
       medAddress: "0x34b940321",
-      doi: "1/1/1111",
+      doi: "10.8/2017",
       capsules: 10,
       density: 5,
       distributed: true
     },{
-      name: "Weed",
+      name: "Opioids",
       patientAddress: "0x243294715",
       medAddress: "0x34b940321",
-      doi: "1/1/1111",
+      doi: "10.8/2017",
       capsules: 10,
       density: 5,
       distributed: true
@@ -150,10 +153,10 @@ var LocalPatient = {
 
 //temp Schema for prescription
 var Prescription = {
-  name: "Weed",
+  name: "Opioids",
   patientAddress: "0x243294715",
   medAddress: "0x243294715",
-  doi: "1/1/1111",
+  doi: "10.8/2017",
   capsules: 10,
   density: 5,
   distributed: true
@@ -174,14 +177,17 @@ router.get('/getPrescription', function(req,res,next){
 router.post('/updatePrescription', urlencodedParser, function(req,res,next){
   // console.log(req.body);
   socket2.emit('createPre', req.body)
-  //socket.emit('updatemeds', 'hello');
-  // socket.emit('updatemeds', 'hello');
+
   res.send('success');
 })
 
 //post request for registering prescription
 router.post('/registerPrescription', urlencodedParser, function(req,res,next){
   console.log(req.body);
+<<<<<<< HEAD
+=======
+
+>>>>>>> 156c09c69f36f6c81bbeb30dfa0d03a8619db9b6
 
 
   //check if medAddress already exists for patientAddress
@@ -190,6 +196,10 @@ router.post('/registerPrescription', urlencodedParser, function(req,res,next){
 
   //check if medAddress already exists for patientAddress
   socket2.emit('registerPre', req.body);
+<<<<<<< HEAD
+=======
+
+>>>>>>> 156c09c69f36f6c81bbeb30dfa0d03a8619db9b6
   res.send(JSON.stringify({result : true}));
 })
 
