@@ -1,10 +1,10 @@
 const express = require('express');
 const router = express.Router();
 var bodyParser =  require('body-parser');
-const io = require('socket.io-client');
+// const io = require('socket.io-client');
 const io2 = require('socket.io-client');
 
-var socket = io('http://localhost:8080');
+// var socket = io('http://localhost:8080');
 var socket2 = io2('http://0.0.0.0:8000');
 // socket.emit(s)
 
@@ -170,7 +170,7 @@ router.get('/getPrescription', function(req,res,next){
 router.post('/updatePrescription', urlencodedParser, function(req,res,next){
   // console.log(req.body);
   socket2.emit('createPre', req.body)
-  socket.emit('updatemeds', 'hello');
+  // socket.emit('updatemeds', 'hello');
   res.send('success');
 })
 

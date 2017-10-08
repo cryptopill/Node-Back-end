@@ -10,7 +10,7 @@ var bodyParser = require('body-parser');
 const app = express();
 
 var server = require('http').Server(app);
-var io = require('socket.io')(server);
+// var io = require('socket.io')(server);
 
 
 app.use(bodyParser.json());
@@ -28,16 +28,16 @@ app.get('/', (req, res) => {
 });
 
 
-io.on('connection', function(socket){
-  console.log('user connected');
+// io.on('connection', function(socket){
+  // console.log('user connected');
   // socket.on('updatemeds', function(data){
   //   console.log(data);
   // })
-  setInterval(function(){
-    socket.emit('updatemeds', 'hello');
-  }, 5000)
+  // setInterval(function(){
+  //   socket.emit('updatemeds', 'hello');
+  // }, 5000)
 
-})
+// })
 //for running the script
 /*exec("echo hi", function(err, stdout, stderr) {
   console.log(stdout);
