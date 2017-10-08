@@ -4,6 +4,7 @@ var bodyParser =  require('body-parser');
 var Patient =  require('../models/Patient.js')
 var Medicine = require('../models/Medicine.js')
 
+//array of Patients
 var Patients = []
 // var Patients = [
 //   {
@@ -100,6 +101,8 @@ var Patients = []
 //   }
 // ]
 
+
+//temp Schema for LocalPatient
 var LocalPatient = {
   address: "0x243294715",
   name: "Space Man",
@@ -107,6 +110,7 @@ var LocalPatient = {
   medicines: []
 }
 
+//temp  prescription
 var Prescription = {
   name: "Weed",
   patientAddress: "0x243294715",
@@ -117,38 +121,43 @@ var Prescription = {
   distributed: true
 }
 
+//for storing medicines
 var medicines = []
 
 //get request for prescription
 router.get('/getPrescription', function(req,res,next){
-
   res.send('hello');
 })
 
 //post request for pills
-router.post('registerPill', function(req,res,next){
+router.post('/updatePrescription', function(req,res,next){
   res.send('success');
 })
 
+
+var names = ['Super', 'Spider', 'Bat']
+
 //get request for all the users
 router.get('/allusers', function(req,res,next){
-  // Patient.name = "Spider Man";
-  // var count = 0;
+  var count = 5;
+  var medicinesArr = [];
+  var tempCount = 0;
   for(j = 0 ; j < 3 ; j++){
-    for(i = 0 ; i < 3 ; i++){
+    for(i = 0 ; i < count; i++){
       Medicine = Prescription;
-      LocalPatient.medicines[i] =  Medicine;
+      medicinesArr[i] =  Medicine;
     }
-
-    Patient = LocalPatient;
+    count -= 1;
+    // console.log(count);
+    LocalPatient.medicines =  medicinesArr;
+    var deepClone = JSON.parse(JSON.stringify(LocalPatient))
+    Patient = deepClone;
+    Patient.name = names[tempCount++];
+    medicinesArr =  []
     Patients.push(Patient);
 
-    // LocalPatient.medicines.length = 0;
-    // for(k = 0 ; k < 3 ; k++){
-    //   LocalPatient.medicines.pop()
-    // }
+
   }
-  // LocalPatient.medicines = []
 
   res.send(Patients);
 })
