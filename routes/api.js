@@ -3,7 +3,8 @@ const router = express.Router();
 var bodyParser =  require('body-parser');
 const io = require('socket.io-client');
 
-var socket = io('http://0.0.0.0:8080');
+// var socket = io('http://0.0.0.0:8080');
+var socket = io('http://localhost:8080');
 
 
 //const io = require('socket.io')(app);
@@ -159,7 +160,7 @@ router.get('/getPrescription', function(req,res,next){
 
 //post request for pills
 router.post('/updatePrescription', function(req,res,next){
-  socket.emit('updatemeds', [1 , 2]);
+  socket.emit('updatemeds');
   res.send('success');
 })
 
