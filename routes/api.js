@@ -44,18 +44,24 @@ var singleAddress = []
   return true;
 }*/
 
+function getRandomAddress() {
+	let addr = Date.now() + Math.ceil(5000*Math.random())
+	addr = addr.toString().substring(0, 10)
+	addr = "0x" + addr
+	return addr
+}
 
 //array of Patients
 var Patients = []
 var Patients = [
   {
-    address: "0x243294715",
+    address: getRandomAddress(),
     name: "Space Man",
     num_prescriptions: 5,
     medicines: [{
       name: "Opioids",
-      patientAddress: "0x243294715",
-      medAddress: "0x34b940321",
+      patientAddress: getRandomAddress(),
+      medAddress: getRandomAddress(),
       doi: "10.8/2017",
       capsules: 10,
       density: 5,
@@ -63,16 +69,16 @@ var Patients = [
     },
     {
       name: "Opioids",
-      patientAddress: "0x243294715",
-      medAddress: "0x34b940321",
+      patientAddress: getRandomAddress(),
+      medAddress: getRandomAddress(),
       doi: "10.8/2017",
       capsules: 10,
       density: 5,
       distributed: true
     },{
       name: "Opioids",
-      patientAddress: "0x243294715",
-      medAddress: "0x34b940321",
+      patientAddress: getRandomAddress(),
+      medAddress: getRandomAddress(),
       doi: "10.8/2017",
       capsules: 10,
       density: 5,
@@ -80,13 +86,13 @@ var Patients = [
     }]
   },
   {
-    address: "0x243294715",
+    address: getRandomAddress(),
     name: "Spider Man",
     num_prescriptions: 5,
     medicines: [{
       name: "Opioids",
-      patientAddress: "0x243294715",
-      medAddress: "0x34b940321",
+      patientAddress: getRandomAddress(),
+      medAddress: getRandomAddress(),
       doi: "10.8/2017",
       capsules: 10,
       density: 5,
@@ -94,29 +100,29 @@ var Patients = [
     },
     {
       name: "Opioids",
-      patientAddress: "0x243294715",
-      medAddress: "0x34b940321",
+      patientAddress: getRandomAddress(),
+      medAddress: getRandomAddress(),
       doi: "10.8/2017",
       capsules: 10,
       density: 5,
       distributed: true
     },{
       name: "Opioids",
-      patientAddress: "0x243294715",
-      medAddress: "0x34b940321",
+      patientAddress: getRandomAddress(),
+      medAddress: getRandomAddress(),
       doi: "10.8/2017",
       capsules: 10,
       density: 5,
       distributed: true
     }]
   },{
-    address: "0x243294715",
+    address: getRandomAddress(),
     name: "Super Man",
     num_prescriptions: 5,
     medicines: [{
       name: "Opioids",
-      patientAddress: "0x243294715",
-      medAddress: "0x34b940321",
+      patientAddress: getRandomAddress(),
+      medAddress: getRandomAddress(),
       doi: "10.8/2017",
       capsules: 10,
       density: 5,
@@ -124,16 +130,16 @@ var Patients = [
     },
     {
       name: "Opioids",
-      patientAddress: "0x243294715",
-      medAddress: "0x34b940321",
+      patientAddress: getRandomAddress(),
+      medAddress: getRandomAddress(),
       doi: "10.8/2017",
       capsules: 10,
       density: 5,
       distributed: true
     },{
       name: "Opioids",
-      patientAddress: "0x243294715",
-      medAddress: "0x34b940321",
+      patientAddress: getRandomAddress(),
+      medAddress: getRandomAddress(),
       doi: "10.8/2017",
       capsules: 10,
       density: 5,
@@ -145,7 +151,7 @@ var Patients = [
 
 //temp Schema for LocalPatient
 var LocalPatient = {
-  address: "0x243294715",
+  address: getRandomAddress(),
   name: "Space Man",
   num_prescriptions: 5,
   medicines: []
@@ -154,8 +160,8 @@ var LocalPatient = {
 //temp Schema for prescription
 var Prescription = {
   name: "Opioids",
-  patientAddress: "0x243294715",
-  medAddress: "0x243294715",
+  patientAddress: getRandomAddress(),
+  medAddress: getRandomAddress(),
   doi: "10.8/2017",
   capsules: 10,
   density: 5,
@@ -184,10 +190,7 @@ router.post('/updatePrescription', urlencodedParser, function(req,res,next){
 //post request for registering prescription
 router.post('/registerPrescription', urlencodedParser, function(req,res,next){
   console.log(req.body);
-<<<<<<< HEAD
-=======
 
->>>>>>> 156c09c69f36f6c81bbeb30dfa0d03a8619db9b6
 
 
   //check if medAddress already exists for patientAddress
@@ -196,10 +199,7 @@ router.post('/registerPrescription', urlencodedParser, function(req,res,next){
 
   //check if medAddress already exists for patientAddress
   socket2.emit('registerPre', req.body);
-<<<<<<< HEAD
-=======
 
->>>>>>> 156c09c69f36f6c81bbeb30dfa0d03a8619db9b6
   res.send(JSON.stringify({result : true}));
 })
 
