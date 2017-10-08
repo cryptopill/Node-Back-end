@@ -1,3 +1,5 @@
+var Medicine = require('./models/Medicine.js');
+
 Patient = {
   address: "string",
   name: "string",

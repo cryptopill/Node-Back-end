@@ -13,6 +13,7 @@ var Patients = [
       name: "Weed",
       patientAddress: "0x243294715",
       medAddress: "0x34b940321",
+      doi: "1/1/1111",
       capsules: 10,
       density: 5,
       distributed: true
@@ -21,6 +22,7 @@ var Patients = [
       name: "Weed",
       patientAddress: "0x243294715",
       medAddress: "0x34b940321",
+      doi: "1/1/1111",
       capsules: 10,
       density: 5,
       distributed: true
@@ -28,6 +30,7 @@ var Patients = [
       name: "Weed",
       patientAddress: "0x243294715",
       medAddress: "0x34b940321",
+      doi: "1/1/1111",
       capsules: 10,
       density: 5,
       distributed: true
@@ -41,6 +44,7 @@ var Patients = [
       name: "Weed",
       patientAddress: "0x243294715",
       medAddress: "0x34b940321",
+      doi: "1/1/1111",
       capsules: 10,
       density: 5,
       distributed: true
@@ -49,6 +53,7 @@ var Patients = [
       name: "Weed",
       patientAddress: "0x243294715",
       medAddress: "0x34b940321",
+      doi: "1/1/1111",
       capsules: 10,
       density: 5,
       distributed: true
@@ -56,6 +61,7 @@ var Patients = [
       name: "Weed",
       patientAddress: "0x243294715",
       medAddress: "0x34b940321",
+      doi: "1/1/1111",
       capsules: 10,
       density: 5,
       distributed: true
@@ -68,6 +74,7 @@ var Patients = [
       name: "Weed",
       patientAddress: "0x243294715",
       medAddress: "0x34b940321",
+      doi: "1/1/1111",
       capsules: 10,
       density: 5,
       distributed: true
@@ -76,6 +83,7 @@ var Patients = [
       name: "Weed",
       patientAddress: "0x243294715",
       medAddress: "0x34b940321",
+      doi: "1/1/1111",
       capsules: 10,
       density: 5,
       distributed: true
@@ -83,6 +91,7 @@ var Patients = [
       name: "Weed",
       patientAddress: "0x243294715",
       medAddress: "0x34b940321",
+      doi: "1/1/1111",
       capsules: 10,
       density: 5,
       distributed: true
