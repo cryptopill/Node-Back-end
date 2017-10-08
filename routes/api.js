@@ -150,6 +150,8 @@ var Prescription = {
 //for storing medicines
 var medicines = []
 
+
+
 //get request for prescription
 router.get('/getPrescription', function(req,res,next){
   res.send('hello');

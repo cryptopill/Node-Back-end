@@ -28,6 +28,11 @@ app.use(cors());
 //set the routes
 app.use('/api', require('./routes/api'));
 
+app.use('/public', express.static('public'));
+
+app.get('/', function(req,res,next){
+  res.sendFile('/public/index.html', {root: __dirname })
+})
 //for running the script
 exec("echo hi", function(err, stdout, stderr) {
   console.log(stdout);
