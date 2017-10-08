@@ -40,100 +40,100 @@ var singleAddress = []
 
 //array of Patients
 var Patients = []
-// var Patients = [
-//   {
-//     address: "0x243294715",
-//     name: "Space Man",
-//     num_prescriptions: 5,
-//     medicines: [{
-//       name: "Weed",
-//       patientAddress: "0x243294715",
-//       medAddress: "0x34b940321",
-//       doi: "1/1/1111",
-//       capsules: 10,
-//       density: 5,
-//       distributed: true
-//     },
-//     {
-//       name: "Weed",
-//       patientAddress: "0x243294715",
-//       medAddress: "0x34b940321",
-//       doi: "1/1/1111",
-//       capsules: 10,
-//       density: 5,
-//       distributed: true
-//     },{
-//       name: "Weed",
-//       patientAddress: "0x243294715",
-//       medAddress: "0x34b940321",
-//       doi: "1/1/1111",
-//       capsules: 10,
-//       density: 5,
-//       distributed: true
-//     }]
-//   },
-//   {
-//     address: "0x243294715",
-//     name: "Spider Man",
-//     num_prescriptions: 5,
-//     medicines: [{
-//       name: "Weed",
-//       patientAddress: "0x243294715",
-//       medAddress: "0x34b940321",
-//       doi: "1/1/1111",
-//       capsules: 10,
-//       density: 5,
-//       distributed: true
-//     },
-//     {
-//       name: "Weed",
-//       patientAddress: "0x243294715",
-//       medAddress: "0x34b940321",
-//       doi: "1/1/1111",
-//       capsules: 10,
-//       density: 5,
-//       distributed: true
-//     },{
-//       name: "Weed",
-//       patientAddress: "0x243294715",
-//       medAddress: "0x34b940321",
-//       doi: "1/1/1111",
-//       capsules: 10,
-//       density: 5,
-//       distributed: true
-//     }]
-//   },{
-//     address: "0x243294715",
-//     name: "Super Man",
-//     num_prescriptions: 5,
-//     medicines: [{
-//       name: "Weed",
-//       patientAddress: "0x243294715",
-//       medAddress: "0x34b940321",
-//       doi: "1/1/1111",
-//       capsules: 10,
-//       density: 5,
-//       distributed: true
-//     },
-//     {
-//       name: "Weed",
-//       patientAddress: "0x243294715",
-//       medAddress: "0x34b940321",
-//       doi: "1/1/1111",
-//       capsules: 10,
-//       density: 5,
-//       distributed: true
-//     },{
-//       name: "Weed",
-//       patientAddress: "0x243294715",
-//       medAddress: "0x34b940321",
-//       doi: "1/1/1111",
-//       capsules: 10,
-//       density: 5,
-//       distributed: true
-//     }]
-//   }
-// ]
+var Patients = [
+  {
+    address: "0x243294715",
+    name: "Space Man",
+    num_prescriptions: 5,
+    medicines: [{
+      name: "Weed",
+      patientAddress: "0x243294715",
+      medAddress: "0x34b940321",
+      doi: "1/1/1111",
+      capsules: 10,
+      density: 5,
+      distributed: true
+    },
+    {
+      name: "Weed",
+      patientAddress: "0x243294715",
+      medAddress: "0x34b940321",
+      doi: "1/1/1111",
+      capsules: 10,
+      density: 5,
+      distributed: true
+    },{
+      name: "Weed",
+      patientAddress: "0x243294715",
+      medAddress: "0x34b940321",
+      doi: "1/1/1111",
+      capsules: 10,
+      density: 5,
+      distributed: true
+    }]
+  },
+  {
+    address: "0x243294715",
+    name: "Spider Man",
+    num_prescriptions: 5,
+    medicines: [{
+      name: "Weed",
+      patientAddress: "0x243294715",
+      medAddress: "0x34b940321",
+      doi: "1/1/1111",
+      capsules: 10,
+      density: 5,
+      distributed: true
+    },
+    {
+      name: "Weed",
+      patientAddress: "0x243294715",
+      medAddress: "0x34b940321",
+      doi: "1/1/1111",
+      capsules: 10,
+      density: 5,
+      distributed: true
+    },{
+      name: "Weed",
+      patientAddress: "0x243294715",
+      medAddress: "0x34b940321",
+      doi: "1/1/1111",
+      capsules: 10,
+      density: 5,
+      distributed: true
+    }]
+  },{
+    address: "0x243294715",
+    name: "Super Man",
+    num_prescriptions: 5,
+    medicines: [{
+      name: "Weed",
+      patientAddress: "0x243294715",
+      medAddress: "0x34b940321",
+      doi: "1/1/1111",
+      capsules: 10,
+      density: 5,
+      distributed: true
+    },
+    {
+      name: "Weed",
+      patientAddress: "0x243294715",
+      medAddress: "0x34b940321",
+      doi: "1/1/1111",
+      capsules: 10,
+      density: 5,
+      distributed: true
+    },{
+      name: "Weed",
+      patientAddress: "0x243294715",
+      medAddress: "0x34b940321",
+      doi: "1/1/1111",
+      capsules: 10,
+      density: 5,
+      distributed: true
+    }]
+  }
+]
 
 
 //temp Schema for LocalPatient
@@ -177,12 +177,11 @@ router.post('/updatePrescription', urlencodedParser, function(req,res,next){
 //post request for registering prescription
 router.post('/registerPrescription', urlencodedParser, function(req,res,next){
   console.log(req.body);
-<<<<<<< HEAD
-=======
+
 
   //check if medAddress already exists for patientAddress
   socket2.emit('registerPre', req.body);
->>>>>>> bf178c66e9e7379af00459406ad1bb879f01062e
+
   res.send(JSON.stringify({result : true}));
 })
 
@@ -193,13 +192,13 @@ var names = ['Super', 'Spider', 'Bat']
 //get request for all the users
 router.get('/allusers', function(req,res,next){
 
-  socket2.emit('getAllUsers', 'hello');
+  /*socket2.emit('getAllUsers', 'hello');
   socket2.on('patientlists', function(data){
     // console.log(data);
     res.send(data);
-  })
+  })*/
 
-  /*var count = 5;
+  var count = 5;
   var medicinesArr = [];
   var tempCount = 0;
   for(j = 0 ; j < 3 ; j++){
@@ -219,7 +218,7 @@ router.get('/allusers', function(req,res,next){
 
   }
 
-  res.send(Patients);*/
+  res.send(Patients);
 })
 
 
