@@ -2,9 +2,10 @@ const express = require('express');
 const router = express.Router();
 var bodyParser =  require('body-parser');
 const io = require('socket.io-client');
+const io2 = require('socket.io-client');
 
-// var socket = io('http://0.0.0.0:8000');
 var socket = io('http://localhost:8080');
+var socket2 = io2('http://0.0.0.0:8000');
 // socket.emit(s)
 
 /*socket.on('updatemeds', function(data){
@@ -147,7 +148,7 @@ var LocalPatient = {
 var Prescription = {
   name: "Weed",
   patientAddress: "0x243294715",
-  medaddress: "0x243294715",
+  medAddress: "0x243294715",
   doi: "1/1/1111",
   capsules: 10,
   density: 5,
@@ -164,13 +165,14 @@ router.get('/getPrescription', function(req,res,next){
   res.send('hello');
 })
 
-//post request for pills
+//post request for prescription
 router.post('/updatePrescription', urlencodedParser, function(req,res,next){
   console.log(req.body);
+  socket2.emit('questions', [1,2,3])
   res.send('success');
 })
 
-
+//post request for registering prescription
 router.post('/registerPrescription', urlencodedParser, function(req,res,next){
   console.log(req.body);
   res.send('success');
