@@ -10,6 +10,8 @@ const app = express();
 
 app.use(cors());
 
+// app.use('/models', require('./models'))
+
 //set the routes
 app.use('/api', require('./routes/api'));
 
