@@ -162,20 +162,25 @@ var medicines = []
 
 //get request for prescription
 router.get('/getPrescription', function(req,res,next){
-  res.send('hello');
+
+  // res.send('hello');
 })
 
 //post request for prescription
 router.post('/updatePrescription', urlencodedParser, function(req,res,next){
-  console.log(req.body);
-  socket2.emit('questions', [1,2,3])
+  // console.log(req.body);
+  socket2.emit('createPre', req.body)
+  socket.emit('updatemeds', 'hello');
   res.send('success');
 })
 
 //post request for registering prescription
 router.post('/registerPrescription', urlencodedParser, function(req,res,next){
   console.log(req.body);
-  res.send(JSON.stringify({result : true});
+
+  //check if medAddress already exists for patientAddress
+  socket2.emit('registerPre', req.body);
+  res.send(JSON.stringify({result : true}));
 })
 
 
@@ -184,7 +189,14 @@ var names = ['Super', 'Spider', 'Bat']
 
 //get request for all the users
 router.get('/allusers', function(req,res,next){
-  var count = 5;
+
+  socket2.emit('getAllUsers', 'hello');
+  socket2.on('patientlists', function(data){
+    // console.log(data);
+    res.send(data);
+  })
+
+  /*var count = 5;
   var medicinesArr = [];
   var tempCount = 0;
   for(j = 0 ; j < 3 ; j++){
@@ -204,7 +216,7 @@ router.get('/allusers', function(req,res,next){
 
   }
 
-  res.send(Patients);
+  res.send(Patients);*/
 })
 
 
