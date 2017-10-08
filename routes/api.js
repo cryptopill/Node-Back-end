@@ -1,10 +1,17 @@
 const express = require('express');
 const router = express.Router();
 var bodyParser =  require('body-parser');
+<<<<<<< HEAD
+//const io = require('socket.io-client');
+const io2 = require('socket.io-client');
+
+//var socket = io('http://localhost:8080');
+=======
 // const io = require('socket.io-client');
 const io2 = require('socket.io-client');
 
 // var socket = io('http://localhost:8080');
+>>>>>>> a28eee028adef2bda65737fe6ab1f4e73ba0d8d1
 var socket2 = io2('http://0.0.0.0:8000');
 // socket.emit(s)
 
@@ -170,18 +177,28 @@ router.get('/getPrescription', function(req,res,next){
 router.post('/updatePrescription', urlencodedParser, function(req,res,next){
   // console.log(req.body);
   socket2.emit('createPre', req.body)
+<<<<<<< HEAD
+  //socket.emit('updatemeds', 'hello');
+=======
   // socket.emit('updatemeds', 'hello');
+>>>>>>> a28eee028adef2bda65737fe6ab1f4e73ba0d8d1
   res.send('success');
 })
 
 //post request for registering prescription
 router.post('/registerPrescription', urlencodedParser, function(req,res,next){
   console.log(req.body);
+<<<<<<< HEAD
 
 
   //check if medAddress already exists for patientAddress
   socket2.emit('registerPre', req.body);
 
+=======
+
+  //check if medAddress already exists for patientAddress
+  socket2.emit('registerPre', req.body);
+>>>>>>> 98c645e252adad4a0a7365f2b70be2c937521d2e
   res.send(JSON.stringify({result : true}));
 })
 
