@@ -1,9 +1,9 @@
 const express = require('express');
 const router = express.Router();
-var cors =  require('cors');
+
 var bodyParser =  require('body-parser');
 
-app.use(cors());
+
 
 
 var Patient = {
