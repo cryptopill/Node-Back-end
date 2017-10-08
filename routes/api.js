@@ -3,7 +3,7 @@ const router = express.Router();
 var bodyParser =  require('body-parser');
 
 
-var users = {
+var Patients = {
   address: "0x243294715",
   name: "Space Man",
   num_prescriptions: 5,
@@ -21,7 +21,6 @@ router.post('registerPill', function(req,res,next){
 
 //get request for all the users
 router.get('/allusers', function(req,res,next){
-
   res.send(users);
 })
 
