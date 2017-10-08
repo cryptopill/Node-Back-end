@@ -11,20 +11,23 @@ var Patients = [
     num_prescriptions: 5,
     medicines: [{
       name: "Weed",
-      address: "0x243294715",
+      patientAddress: "0x243294715",
+      medAddress: "0x34b940321",
       capsules: 10,
       density: 5,
       distributed: true
     },
     {
       name: "Weed",
-      address: "0x243294715",
+      patientAddress: "0x243294715",
+      medAddress: "0x34b940321",
       capsules: 10,
       density: 5,
       distributed: true
     },{
       name: "Weed",
-      address: "0x243294715",
+      patientAddress: "0x243294715",
+      medAddress: "0x34b940321",
       capsules: 10,
       density: 5,
       distributed: true
@@ -36,20 +39,23 @@ var Patients = [
     num_prescriptions: 5,
     medicines: [{
       name: "Weed",
-      address: "0x243294715",
+      patientAddress: "0x243294715",
+      medAddress: "0x34b940321",
       capsules: 10,
       density: 5,
       distributed: true
     },
     {
       name: "Weed",
-      address: "0x243294715",
+      patientAddress: "0x243294715",
+      medAddress: "0x34b940321",
       capsules: 10,
       density: 5,
       distributed: true
     },{
       name: "Weed",
-      address: "0x243294715",
+      patientAddress: "0x243294715",
+      medAddress: "0x34b940321",
       capsules: 10,
       density: 5,
       distributed: true
@@ -60,20 +66,23 @@ var Patients = [
     num_prescriptions: 5,
     medicines: [{
       name: "Weed",
-      address: "0x243294715",
+      patientAddress: "0x243294715",
+      medAddress: "0x34b940321",
       capsules: 10,
       density: 5,
       distributed: true
     },
     {
       name: "Weed",
-      address: "0x243294715",
+      patientAddress: "0x243294715",
+      medAddress: "0x34b940321",
       capsules: 10,
       density: 5,
       distributed: true
     },{
       name: "Weed",
-      address: "0x243294715",
+      patientAddress: "0x243294715",
+      medAddress: "0x34b940321",
       capsules: 10,
       density: 5,
       distributed: true
