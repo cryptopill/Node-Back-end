@@ -56,26 +56,26 @@ var Patients = [
       name: "Opioids",
       patientAddress: "0x243294715",
       medAddress: "0x34b940321",
-      doi: "10.8/2017",
-      capsules: 10,
+      doi: "9/5/2017",
+      capsules: 8,
       density: 5,
       distributed: true
     },
     {
-      name: "Opioids",
+      name: "Theophylline",
       patientAddress: "0x243294715",
       medAddress: "0x34b940321",
-      doi: "10.8/2017",
-      capsules: 10,
-      density: 5,
-      distributed: true
+      doi: "6/9/2017",
+      capsules: 5,
+      density: 4,
+      distributed: false
     },{
-      name: "Opioids",
+      name: "Dilitiazem",
       patientAddress: "0x243294715",
       medAddress: "0x34b940321",
-      doi: "10.8/2017",
-      capsules: 10,
-      density: 5,
+      doi: "15/8/2017",
+      capsules: 3,
+      density: 6,
       distributed: true
     }]
   },
@@ -84,29 +84,29 @@ var Patients = [
     name: "Spider Man",
     num_prescriptions: 4,
     medicines: [{
-      name: "Opioids",
+      name: "Lithium",
       patientAddress: "0x243294715",
       medAddress: "0x34b940321",
-      doi: "10.8/2017",
-      capsules: 10,
-      density: 5,
+      doi: "10/8/2017",
+      capsules: 14,
+      density: 2,
       distributed: true
     },
     {
-      name: "Opioids",
+      name: "Mesalazine",
       patientAddress: "0x243294715",
       medAddress: "0x34b940321",
-      doi: "10.8/2017",
-      capsules: 10,
+      doi: "20/8/2017",
+      capsules: 7,
       density: 5,
       distributed: true
     },{
       name: "Opioids",
       patientAddress: "0x243294715",
       medAddress: "0x34b940321",
-      doi: "10.8/2017",
-      capsules: 10,
-      density: 5,
+      doi: "12/8/2017",
+      capsules: 9,
+      density: 7,
       distributed: true
     }]
   },{
@@ -114,19 +114,19 @@ var Patients = [
     name: "Super Man",
     num_prescriptions: 3,
     medicines: [{
-      name: "Opioids",
+      name: "Nifedipine",
       patientAddress: "0x243294715",
       medAddress: "0x34b940321",
-      doi: "10.8/2017",
+      doi: "10/8/2017",
       capsules: 10,
       density: 5,
       distributed: true
     },
     {
-      name: "Opioids",
+      name: "Lithium",
       patientAddress: "0x243294715",
       medAddress: "0x34b940321",
-      doi: "10.8/2017",
+      doi: "10/8/2017",
       capsules: 10,
       density: 5,
       distributed: true
@@ -134,7 +134,7 @@ var Patients = [
       name: "Opioids",
       patientAddress: "0x243294715",
       medAddress: "0x34b940321",
-      doi: "10.8/2017",
+      doi: "10/8/2017",
       capsules: 10,
       density: 5,
       distributed: true
@@ -156,7 +156,7 @@ var Prescription = {
   name: "Opioids",
   patientAddress: "0x243294715",
   medAddress: "0x243294715",
-  doi: "10.8/2017",
+  doi: "10/8/2017",
   capsules: 10,
   density: 5,
   distributed: true
@@ -184,10 +184,7 @@ router.post('/updatePrescription', urlencodedParser, function(req,res,next){
 //post request for registering prescription
 router.post('/registerPrescription', urlencodedParser, function(req,res,next){
   console.log(req.body);
-<<<<<<< HEAD
-=======
 
->>>>>>> 156c09c69f36f6c81bbeb30dfa0d03a8619db9b6
 
 
   //check if medAddress already exists for patientAddress
@@ -196,10 +193,7 @@ router.post('/registerPrescription', urlencodedParser, function(req,res,next){
 
   //check if medAddress already exists for patientAddress
   socket2.emit('registerPre', req.body);
-<<<<<<< HEAD
-=======
 
->>>>>>> 156c09c69f36f6c81bbeb30dfa0d03a8619db9b6
   res.send(JSON.stringify({result : true}));
 })
 
