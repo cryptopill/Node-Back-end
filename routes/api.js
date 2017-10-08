@@ -8,7 +8,7 @@ const io2 = require('socket.io-client');
 //var socket = io('http://localhost:8080');
 
 // const io = require('socket.io-client');
-const io2 = require('socket.io-client');
+//const io2 = require('socket.io-client');
 
 // var socket = io('http://localhost:8080');
 
@@ -177,10 +177,6 @@ router.get('/getPrescription', function(req,res,next){
 router.post('/updatePrescription', urlencodedParser, function(req,res,next){
   // console.log(req.body);
   socket2.emit('createPre', req.body)
-
-  //socket.emit('updatemeds', 'hello');
-
-  // socket.emit('updatemeds', 'hello');
 
   res.send('success');
 })
