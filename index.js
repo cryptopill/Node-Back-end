@@ -11,10 +11,7 @@ const app = express();
 var server = require('http').Server(app);
 var io = require('socket.io')(server);
 
-io.on('updatemeds', function(socket){
-  console.log('io waiting');
-  socket.emit('replymeds', 'hello');
-})
+
 
 /*setInterval(function(){
 
@@ -28,10 +25,16 @@ app.use(cors());
 //set the routes
 app.use('/api', require('./routes/api'));
 
-app.use('/public', express.static('public'));
+app.use(express.static(__dirname + '/public'));
 
-app.get('/', function(req,res,next){
-  res.sendFile('/public/index.html', {root: __dirname })
+app.get('/', (req, res) => {
+  res.sendFile(__dirname + '/index.html');
+});
+
+
+io.on('updatemeds', function(socket){
+  console.log('user connected');
+  socket.emit('replymeds', 'hello');
 })
 //for running the script
 /*exec("echo hi", function(err, stdout, stderr) {

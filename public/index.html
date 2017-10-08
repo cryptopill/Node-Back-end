@@ -7,4 +7,15 @@
   <body>
     hi
   </body>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.js">
+
+  </script>
+  <script type="text/javascript">
+  var socket = io.connect('http://127.0.0.1:8080');
+  socket.emit('updatemeds', {hi: "data"});
+  // socket.on('news', function (data) {
+  // console.log(data);
+  // socket.emit('my other event', { my: 'data' });
+  // });
+  </script>
 </html>
