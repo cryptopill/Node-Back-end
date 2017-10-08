@@ -21,7 +21,7 @@ router.post('registerPill', function(req,res,next){
 
 //get request for all the users
 router.get('/allusers', function(req,res,next){
-
+  users.name = "Spider Man";
   res.send(users);
 })
 
