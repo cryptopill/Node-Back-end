@@ -184,7 +184,10 @@ router.post('/updatePrescription', urlencodedParser, function(req,res,next){
 //post request for registering prescription
 router.post('/registerPrescription', urlencodedParser, function(req,res,next){
   console.log(req.body);
+<<<<<<< HEAD
+=======
 
+>>>>>>> 156c09c69f36f6c81bbeb30dfa0d03a8619db9b6
 
 
   //check if medAddress already exists for patientAddress
@@ -193,7 +196,10 @@ router.post('/registerPrescription', urlencodedParser, function(req,res,next){
 
   //check if medAddress already exists for patientAddress
   socket2.emit('registerPre', req.body);
+<<<<<<< HEAD
+=======
 
+>>>>>>> 156c09c69f36f6c81bbeb30dfa0d03a8619db9b6
   res.send(JSON.stringify({result : true}));
 })
 
