@@ -82,7 +82,7 @@ var Patients = [
   {
     address: "0x243294715",
     name: "Spider Man",
-    num_prescriptions: 5,
+    num_prescriptions: 4,
     medicines: [{
       name: "Opioids",
       patientAddress: "0x243294715",
@@ -112,7 +112,7 @@ var Patients = [
   },{
     address: "0x243294715",
     name: "Super Man",
-    num_prescriptions: 5,
+    num_prescriptions: 3,
     medicines: [{
       name: "Opioids",
       patientAddress: "0x243294715",
