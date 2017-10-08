@@ -1,5 +1,6 @@
 const express = require('express');
 var exec = require('child_process').exec;
+var cors =  require('cors');
 // const exec = require('child-process').exec;
 // const sys =
 
@@ -7,6 +8,7 @@ var exec = require('child_process').exec;
 //set up express app
 const app = express();
 
+app.use(cors());
 
 //set the routes
 app.use('/api', require('./routes/api'));
