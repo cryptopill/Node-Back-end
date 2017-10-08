@@ -175,7 +175,7 @@ router.post('/updatePrescription', urlencodedParser, function(req,res,next){
 //post request for registering prescription
 router.post('/registerPrescription', urlencodedParser, function(req,res,next){
   console.log(req.body);
-  res.send(true);
+  res.send({result : true});
 })
 
 
