@@ -1,6 +1,9 @@
 const express = require('express');
 const router = express.Router();
+var cors =  require('cors');
 var bodyParser =  require('body-parser');
+
+app.use(cors());
 
 
 var Patient = {
@@ -9,8 +12,13 @@ var Patient = {
   num_prescriptions: 5,
   medicines: ['med1', 'med2', 'med3']
 }
+
+var Prescription = {
+  name: "Weed",
+
+}
 //get request for prescription
-router.get('/prescription', function(req,res,next){
+router.get('/getPrescription', function(req,res,next){
   res.send('hello');
 })
 
@@ -24,6 +32,7 @@ router.get('/allusers', function(req,res,next){
   Patient.name = "Spider Man";
   res.send(Patient);
 })
+
 
 
 module.exports = router;
