@@ -3,9 +3,9 @@ const router = express.Router();
 var bodyParser =  require('body-parser');
 const io = require('socket.io-client');
 
-// var socket = io('http://0.0.0.0:8080');
+// var socket = io('http://0.0.0.0:8000');
 var socket = io('http://localhost:8080');
-
+// socket.emit(s)
 
 /*socket.on('updatemeds', function(data){
   console.log(data)
@@ -14,6 +14,8 @@ var socket = io('http://localhost:8080');
 //const io = require('socket.io')(app);
 var Patient =  require('../models/Patient.js')
 var Medicine = require('../models/Medicine.js')
+
+var urlencodedParser = bodyParser.urlencoded({ extended: false })
 
 //server.listen(3000);
 // io.on('updatemeds', function(socket){
@@ -163,10 +165,16 @@ router.get('/getPrescription', function(req,res,next){
 })
 
 //post request for pills
-router.post('/updatePrescription', function(req,res,next){
+router.post('/updatePrescription', urlencodedParser, function(req,res,next){
+  console.log(req.body);
   res.send('success');
 })
 
+
+router.post('/registerPrescription', urlencodedParser, function(req,res,next){
+  console.log(req.body);
+  res.send('success');
+})
 
 
 

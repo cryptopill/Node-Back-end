@@ -1,6 +1,7 @@
 const express = require('express');
 var exec = require('child_process').exec;
 var cors =  require('cors');
+var bodyParser = require('body-parser');
 // const exec = require('child-process').exec;
 // const sys =
 
@@ -12,7 +13,7 @@ var server = require('http').Server(app);
 var io = require('socket.io')(server);
 
 
-
+app.use(bodyParser.json());
 app.use(cors());
 
 // app.use('/models', require('./models'))
